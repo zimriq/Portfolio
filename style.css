@@ -4,32 +4,39 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: 
-    padding: 20px;
-    max-width: 1400px;
-    margin: 0 auto;
+    background-color: white;
+    margin: auto;
 }
 
 div[title="header"] {
-    background-color: #555; /* fallback if image doesn't load */
-    background-image: url('files/zac-gudakov-YHOCSl91YHY-unsplash.jpg');
+    background-image: url("files/zac-gudakov-YHOCSl91YHY-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    color: white;
-    padding: 100px 20px;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    padding: 0;
 }
 
+
 div[title="header"] h1 {
-    font-size: 4em;
+    font-size: 5em;
     margin-bottom: 20px;
     font-weight: 600;
-    text-shadow: 2.5px 5px 5px rgba(0, 0, 0, 0.5);
+    color:  white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 div[title="header"] button {
@@ -46,6 +53,21 @@ div[title="header"] button {
     justify-content: center;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button-bottom {
+    position: absolute;
+    bottom: 20px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+
+}
+
 div[title="header"] button:hover {
     background-color: white;
     transform: translateY(-2px);
@@ -57,40 +79,3 @@ div[title="header"] button img {
     height: 30px;
 }
 
-div[title="Bio"] {
-    background-color: #ffe7d4;
-    padding: 50px 20px;
-    border-radius: 25px;
-    margin-bottom: 30px;
-}
-
-div[title="Bio"] h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-div[title="Projects"] {
-    background-color: #f9d4ff;
-    padding: 50px 20px;
-    border-radius: 25px;
-    margin-bottom: 30px;
-}
-
-div[title="Projects"] h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-div[title="Projects"] h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-div[title="Projects"] li {
-    margin-bottom: 10px;
-    margin-left: 20px;
-    color: #010101;
-}
