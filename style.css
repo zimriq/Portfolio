@@ -79,3 +79,8 @@ div[title="header"] button img {
     height: 30px;
 }
 
+div[id="bottomHalf"] {
+    background: radial-gradient(rgb(2, 0, 33));
+    color: #e5e7eb;
+    padding: 60px 20px 80px;
+}
