@@ -84,3 +84,63 @@ div[id="bottomHalf"] {
     color: #e5e7eb;
     padding: 60px 20px 80px;
 }
+
+
+div[id="bottomHalf"] > div[title="Bio"],
+div[id="bottomHalf"] > div[title="Projects"] {
+    max-width: 1100px;
+    margin: 0 auto 32px;
+}
+
+div[id="bottomHalf"] h2 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+    color: #f9fafb;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+div[id="bottomHalf"] h3 a {
+    color: #a5b4fc;
+    text-decoration: none;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+    position: relative;
+}
+
+div[id="bottomHalf"] h3 a::after {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #a5b4fc, #f97316);
+    transition: width 0.25s ease;
+}
+
+div[id="bottomHalf"] h3 a:hover::after {
+    width: 100%;
+}
+
+div[id="bottomHalf"] p,
+div[id="bottomHalf"] li {
+    font-size: 0.98rem;
+    color: #d1d5db;
+}
+
+div[id="bottomHalf"] p {
+    line-height: 1.75;
+}
+
+div[id="bottomHalf"] ul {
+    margin-left: 1.2rem;
+    margin-bottom: 1.4rem;
+}
+
+div[id="bottomHalf"] li {
+    margin-bottom: 0.4rem;
+}
+
+div[id="bottomHalf"] strong {
+    color: #f97316;
+}
