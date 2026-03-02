@@ -144,3 +144,28 @@ div[id="bottomHalf"] li {
 div[id="bottomHalf"] strong {
     color: #f97316;
 }
+
+div[title="Resume"] {
+    background: rgba(15, 23, 42, 0.85);
+    padding: 32px 20px 60px;
+    text-align: center;
+}
+
+div[title="Resume"] h2 a {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, orange, violet);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: 20px;
+    transition: all 0.3s ease;
+}
+
+div[title="Resume"] h2 a:hover {
+    transform: translateY(-3px);
+    box-shadow: 20px;
+    filter: brightness(1.05);
+}
