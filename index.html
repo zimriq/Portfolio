@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Zimri Quinonez | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
     <div class="button-bottom">
         <button>
             <a href="#bottomHalf">
-                <img src="files/icons8-arrow-down-50.png">
+                <img src="files/icons8-arrow-down-50.png" alt="View projects">
             </a>
         </button>
     </div>
@@ -37,31 +37,30 @@
     <div id="bottomHalf">
         <div title="Bio">
             <h2><strong>About Me:</strong></h2>
-          <p>Hi, I'm Zimri, an aspiring Software Engineer with a current background in Software Quality Assurance. <br>
-            I am currently pursuing a B.S. in Computer Science at Clemson University with a minor in AI. My journey at Eleos Technologies, where I progressed to a Tier II Software QA Analyst role, 
-            has helped me strengthen my ability in QA finding defects across multiple platforms and bridging between QA and Engineering.
-            This experience has taught me how to view code through the lens of the user, and ensuring that what I build isn't just functionable but also resilient.<br>
-            <!-- Talk about other stuff (projects, etc.)--> </p>
+          <p>Hi, I'm Zimri, a Computer Science student at Clemson University and a Tier II Software QA Analyst at Eleos Technologies.</p>
+          <p>I build mobile apps and web services, including SleeperLive, an iPhone app live on the App Store. My QA experience helps me investigate defects, test across platforms, and give engineering teams clear, reproducible feedback.</p>
         </div>
          <div title="Projects">
             <h2><strong>Projects:</strong></h2>
-            <h3> <a href="https://github.com/zimriq/WebService-Project">Web Service Project</a></h2>
+            <h3><a href="https://apps.apple.com/us/app/sleeperlive/id6826844567">SleeperLive</a></h3>
+                <p>Published iOS app and companion backend for Sleeper fantasy football Live Activities.</p>
                 <ul>
-                    <li>A backend mock webservice which utilizes RESTful APIs for managing user authentication and load tracking for truck drivers.</li>
-                    <li>Implements secure authentication using password hashing and crypto generated API tokens for session management.</li>
-                    <li>Utilizes MongoDB (NoSQL) with Mongoose for scalabale storage of users, authentication tokens, and load data, deployed on AWS Elastic Beanstalk.</li>
+                    <li>Built the iPhone app with SwiftUI, ActivityKit, and WidgetKit to display matchup scores on the Lock Screen.</li>
+                    <li>Developed a Node.js/Express backend with SQLite persistence, device authentication, APNs delivery, token rotation, and retry handling.</li>
+                    <li>Automated app simulator and server regression tests with GitHub Actions; tested 12 simulated concurrent users with mocked external services.</li>
                 </ul>
-            <h3><a href="https://github.com/zimriq/FantasyForecast">FantasyForecast</a></h2>
+                <p><a href="https://github.com/zimriq/SleeperLive">App source</a> | <a href="https://github.com/zimriq/SleeperLive-Server">Server source</a></p>
+            <h3><a href="https://github.com/zimriq/WebService-Project">Web Service Project</a></h3>
                 <ul>
-                    <li>Full-Stack web app that delivers real time fantasy football insights, including player comparison and automated Start/Sit recommendations.</li>
-                    <li>Backend servies fetch and process live NFL and Sleeper data using APIs.</li>
-                    <li>Developed a responsive front end dashboard</li>
-                    <li>Created a develop branch for planned future changes and additions (trade analyzer, matchup analysis, and injury tracker) to support feature expansion.</li>
+                    <li>Built a REST API for user authentication and truck-driver load tracking.</li>
+                    <li>Implemented password hashing and generated API tokens; stored users and load data using MongoDB and Mongoose.</li>
+                    <li>Deployed the service to AWS Elastic Beanstalk.</li>
                 </ul>
-            <h3><a href="https://github.com/zimriq/Calculator">Interactive Calculator</a></h2>
+            <h3><a href="https://github.com/zimriq/FantasyForecast">FantasyForecast</a></h3>
                 <ul>
-                    <li>Developed a fully functional calculator to demonstreate core arithmetic logic</li>
-                    <li>Implemented as well input validation logic to prevent calculator errors, and improving user experience</li>
+                    <li>Built a full-stack fantasy football app with player comparisons and automated Start/Sit recommendations.</li>
+                    <li>Integrated NFL and Sleeper API data through Node.js/Express services.</li>
+                    <li>Developed a responsive dashboard using HTML, CSS, and JavaScript.</li>
                 </ul>
         </div>
     </div>
